@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Raleway Thin'), local('Raleway-Thin'), url(font/Raleway-100.woff2) format('woff2'), url(font/Raleway-100.ttf) format('truetype');
+    unicode-range: U+0000—001F;
+}
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Oxygen Light'), local('Oxygen-Light'), url(http://fonts.gstatic.com/s/oxygen/v5/AwBqWF2kjhlybWamaKMPcZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    color: white;
+}
+h1, h2, h3 {
+    font-family: 'Raleway', 'Oxygen', sans-serif;
+    margin: 0;
+}
+h1 {
+    font-size: 5em;
+}
+nav {
+
+}
+nav ul {
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+}
+header, article {
+    height: 100vh;
+    margin: 0;
+}
+header {
+    background: url(images/bg1.jpg);
+}
