@@ -83,15 +83,22 @@ nav li:active:before {
     right: 0;
 }
 header {
-	background-image: linear-gradient(175deg, transparent 80%, white 10%), url(images/bg1.jpg);
-	background-size: 100%, cover;
-	background-repeat: no-repeat;
-    height: 100vh;
+    background-image: linear-gradient(175deg, transparent 80%, white 10%), url(images/bg1.jpg);
+    background-size: 100%, cover;
+    background-repeat: no-repeat;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2em;
+}
+header h2 {
+    position: absolute;
+    color: #333;
+    font-size: 3em;
+    bottom: 3%;
+    right: 1%;
 }
 article {
     background: white;
@@ -99,8 +106,9 @@ article {
     padding: 2em;
 }
 article:nth-of-type(1) {
-	padding-top: 0;
+    padding-top: 0;
 }
 p {
     font-size: 1.1em;
+    text-align: justify;
 }
