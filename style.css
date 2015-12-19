@@ -28,7 +28,7 @@ h2,
 h3 {
     font-family: 'Raleway', 'Oxygen', sans-serif;
     margin: 0;
-	font-weight: 100;
+    font-weight: 100;
 }
 h1 {
     font-size: 6em;
@@ -36,6 +36,8 @@ h1 {
 nav {
     position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
     font-size: 1.1em;
     padding: 20px 0;
 }
@@ -80,19 +82,25 @@ nav li:active:before {
     left: 0;
     right: 0;
 }
-header,
-article {
+header {
+	background-image: linear-gradient(175deg, transparent 80%, white 10%), url(images/bg1.jpg);
+	background-size: 100%, cover;
+	background-repeat: no-repeat;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2em;
 }
-header {
-    background: url(images/bg1.jpg) fixed;
-    background-size: cover;
+article {
+    background: white;
+    color: #333;
+    padding: 2em;
 }
 article:nth-of-type(1) {
-	background: url(images/bg2.jpg) fixed;
-	background-size: cover;
+	padding-top: 0;
+}
+p {
+    font-size: 1.1em;
 }
