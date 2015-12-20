@@ -6,10 +6,10 @@
     unicode-range: U+0000—001F;
 }
 @font-face {
-    font-family: 'Oxygen';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
-    src: local('Oxygen Light'), local('Oxygen-Light'), url(http://fonts.gstatic.com/s/oxygen/v5/AwBqWF2kjhlybWamaKMPcZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+    src: local('Open Sans Light'), local('Open Sans-Light'), url(font/OpenSans-300.woff2) format('woff2'), url(font/OpenSans-300.ttf) format('truetype');
     unicode-range: U+0000—001F;
 }
 * {
@@ -18,7 +18,7 @@
     padding: 0;
 }
 body {
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: white;
@@ -26,7 +26,7 @@ body {
 h1,
 h2,
 h3 {
-    font-family: 'Raleway', 'Oxygen', sans-serif;
+    font-family: 'Raleway', 'Open Sans', sans-serif;
     margin: 0;
     font-weight: 100;
 }
@@ -83,30 +83,25 @@ nav li:active:before {
     right: 0;
 }
 header {
-    background-image: linear-gradient(175deg, transparent 80%, white 10%), url(images/bg1.jpg);
-    background-size: 100%, cover;
+    /*background-image: linear-gradient(175deg, transparent 85%, white 5%), url(images/bg1.jpg);*/
+    background: url(images/bg1.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 110vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2em;
 }
-header h2 {
-    position: absolute;
-    color: #333;
-    font-size: 3em;
-    bottom: 3%;
-    right: 1%;
-}
 article {
     background: white;
     color: #333;
     padding: 2em;
 }
-article:nth-of-type(1) {
-    padding-top: 0;
+h2 {
+    font-size: 3em;
+    text-align: center;
 }
 p {
     font-size: 1.1em;
