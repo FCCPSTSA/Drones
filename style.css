@@ -107,6 +107,9 @@ p {
     font-size: 1.1em;
     text-align: justify;
 }
+.videos {
+    margin: 20px auto;
+}
 iframe {
     border: 0;
 }
